@@ -6,8 +6,12 @@ interface CardProps {
     image: string;
 }
 
-const CardComponent: React.FC<CardProps> = ({ menuName, image }) => {
-    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+const CardComponent: React.FC<CardProps> = ({
+     menuName, image 
+    }) => {
+    const [
+        selectedImage, setSelectedImage
+    ] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
