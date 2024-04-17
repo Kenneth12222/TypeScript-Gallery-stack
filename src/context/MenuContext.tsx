@@ -53,3 +53,4 @@ export const MenuProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }
     </MenuContext.Provider>
   );
 };
+
