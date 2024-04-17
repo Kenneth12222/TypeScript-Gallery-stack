@@ -8,9 +8,9 @@ const MenuComponent: React.FC = () => {
     const { menuData } = useContext(MenuContext);
 
     return (
-        <div>
+        <div className='image-container'>
             <h2>Menu</h2>
-            <div className="card-container">
+            <div className="image-gallery">
                 {menuData.map((item: MenuItem, index: number) => (
                     <CardComponent key={index} menuName={item.menu_name} image={item.image} />
                 ))}
